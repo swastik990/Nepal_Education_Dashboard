@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Education Dashboard</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background-color: #f7f9fb;
+      color: #333;
+    }
+    header {
+      background-color: #003366;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+    h1 {
+      margin: 0;
+      font-size: 2em;
+    }
+    .dashboard {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
+      gap: 24px;
+      padding: 40px;
+    }
+    .card {
+      background-color: #fff;
+      border-radius: 12px;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.05);
+      overflow: hidden;
+      transition: transform 0.2s ease;
+    }
+    .card:hover {
+      transform: scale(1.01);
+    }
+    .frame {
+      width: 100%;
+      height: 500px;
+      border: none;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      font-size: 14px;
+      color: #888;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Nepal Education Dashboard</h1>
+    <p>Visualizing Dropout, Repetition & Access Patterns</p>
+  </header>
+
+  <div class="dashboard">
+    <div class="card"><iframe class="frame" src="graph1.html"></iframe></div>
+    <div class="card"><iframe class="frame" src="graph2.html"></iframe></div>
+    <div class="card"><iframe class="frame" src="graph3.html"></iframe></div>
+    <div class="card"><iframe class="frame" src="graph4.html"></iframe></div>
+    <div class="card"><iframe class="frame" src="graph5.html"></iframe></div>
+    <div class="card"><iframe class="frame" src="graph6.html"></iframe></div>
+    <div class="card"><iframe class="frame" src="graph7.html"></iframe></div>
+  </div>
+
+  <footer>
+    &copy; 2025 Nepal Education Insights | Built with Plotly
+  </footer>
+</body>
+</html>
